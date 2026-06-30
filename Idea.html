@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>アイデア投稿 - loper</title>
+<link rel="icon" href="images/loper_MainIcon.png">
+<link rel="stylesheet" href="Idea.css">
+</head>
+<body>
+<div class="idea-app">
+
+  <header class="idea-header">
+    <a href="index.html" class="idea-back-btn" aria-label="メイン画面へ戻る">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+    </a>
+    <h1 class="idea-header-title">アイデア投稿</h1>
+    <div class="idea-header-spacer"></div>
+  </header>
+
+  <main class="idea-main">
+    <p class="idea-intro">開発のアイデアを気軽に投稿してみましょう。どなたでも自由に書き込めます。</p>
+
+    <form class="idea-form" id="ideaForm">
+      <div class="idea-form-group">
+        <label for="ideaNameInput">名前（任意）</label>
+        <input type="text" id="ideaNameInput" maxlength="20" placeholder="匿名">
+      </div>
+
+      <div class="idea-form-group">
+        <label for="ideaTextInput">アイデア内容</label>
+        <textarea id="ideaTextInput" maxlength="300" placeholder="どんなアイデアでもOKです" required></textarea>
+        <span class="idea-char-counter" id="ideaCharCounter">0 / 300</span>
+      </div>
+
+      <button type="submit" class="idea-submit-btn">投稿する</button>
+    </form>
+
+    <div class="idea-list" id="ideaList">
+      <!-- JSで生成 -->
+    </div>
+  </main>
+
+</div>
+
+<script src="idea.js"></script>
+</body>
+</html>
