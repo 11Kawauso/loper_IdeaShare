@@ -1,2 +1,2 @@
-# loper_IdeaShare
+# loper-IdeaShare
 loperのサブ機能
